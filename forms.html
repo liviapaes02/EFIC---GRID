@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="EFIC">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lívia Paes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EFIC.desc</title>
+    <title>EFIC</title>
     <link rel="stylesheet" href="style.css" type="">
     <link rel="shortcut icon" href="Imgs/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body style="background-color: #fffd8d;"></body>
 <body>
+    <header>
     <h2>Formulário</h2>
-
+    </header>
     <form method="get" action="envio_dados.php">
-    Nome: <input type="text" name="nome" placeholder="Digite seu nome aqui">
+    <label for="nome">    
+    Nome: <input type="name" id="nome" name="sobre"placeholder="Digite seu nome aqui">
+    </label>
     <br/><br/>
-    E-mail: <input type="email" name="e-mail" placeholder="Digite o seu e-mail aqui">
+    <label for="email">
+    E-mail: <input type="send" id="email" name="mensagem" placeholder="Digite o seu e-mail aqui">
+    </label>
     <br/><br/>
-    Endereço: <input type="endereço" name="endereço" placeholder="Digite o seu endereço aqui">
+    <label for="endereço">
+    Endereço: <input type="address" id="endereço" name="lugar" placeholder="Digite o seu endereço aqui">
+    <label>
     <br/><br/>
-    Contato: <input type="tel" name="Contato" placeholder="Digite o seu contato aqui">
+    <label for="contato">
+    Contato: <input type="telephone" id="contato" name="contact" placeholder="Digite o seu contato aqui">
+    </label>
     <br/><br/>
-    Comentários: <input type="comentários" name="comentários" placeholder="Digite o seu comentário aqui">
+    <label for="comentários">
+    Comentários: <input type="comments" id="comentários" name="comentar" placeholder="Digite o seu comentário aqui">
+    </label>
     <br/><br/>
-    <input type="submit" name="enviar" value="Enviar">
+    <div class="botao">
+    <button onclick="send()"> Enviar </button>
+    </div>
     </form>
+    <script src="index.js"></script>
 </body>
